@@ -1,7 +1,7 @@
 [plugin]
 id = "detective-game"
 name = "Detective Case"
-version = "0.3.3"
+version = "0.3.4"
 description = "Solve procedurally generated crimes with many suspects and evidence-based probabilities, in Astra or Telegram chat."
 author = "Voltur"
 license = "MIT"
