@@ -1,0 +1,23 @@
+[plugin]
+id = "detective-game"
+name = "Detective Case"
+version = "0.3.3"
+description = "Solve procedurally generated crimes with many suspects and evidence-based probabilities, in Astra or Telegram chat."
+author = "Voltur"
+license = "MIT"
+
+[entry]
+command = "python"
+args = ["-m", "src.plugin"]
+cwd = "."
+runtimes = ["python"]
+
+[capabilities]
+tools = true
+
+[config]
+schema = "{ \"type\": \"object\", \"properties\": {} }"
+
+[platform]
+os = ["linux", "windows"]
+arch = ["x86_64"]
