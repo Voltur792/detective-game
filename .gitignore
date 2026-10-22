@@ -3,3 +3,7 @@ __pycache__/
 .venv/
 *.astraplugin
 data/
+
+.tmp-platform-tests/
+
+AGENTS.md

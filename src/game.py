@@ -9,6 +9,7 @@ import secrets
 import tempfile
 import threading
 from pathlib import Path
+from .storage import data_root
 
 from .cases import CASES
 from . import procedural
@@ -17,10 +18,7 @@ _LOCK = threading.RLock()
 
 
 def _state_path() -> Path:
-    root = os.environ.get("ASTRA_DETECTIVE_DATA_DIR")
-    if not root:
-        root = str(Path(os.environ.get("APPDATA") or Path.home() / ".local" / "share") / "detective-game")
-    return Path(root) / "games.json"
+    return data_root("detective-game", "ASTRA_DETECTIVE_DATA_DIR") / "games.json"
 
 
 def _load() -> dict:
