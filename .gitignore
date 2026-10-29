@@ -1,9 +1,0 @@
-__pycache__/
-.pytest_cache/
-.venv/
-*.astraplugin
-data/
-
-.tmp-platform-tests/
-
-AGENTS.md
